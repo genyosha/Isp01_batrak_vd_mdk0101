@@ -12,7 +12,6 @@ namespace isp_1batrak
         {
             Vector vector01 = new Vector(3, 4.5, 2);
             Vector vector02 = new Vector(2, 1.2, 6);
-            Vector vectorXYZ = new Vector(1, 2, 3);
             Console.WriteLine(vector01.ToString());
             Console.WriteLine(vector02.ToString());
 
@@ -21,12 +20,12 @@ namespace isp_1batrak
             Console.WriteLine(vector02.Length());
 
             Console.WriteLine("Скалярное произведение векторов:");
-            Console.WriteLine(vector01.ScalarProduct(vectorXYZ));
-            Console.WriteLine(vector02.ScalarProduct(vectorXYZ));
+            Console.WriteLine(vector01.ScalarProduct(new Vector(1, 2, 3)));
+            Console.WriteLine(vector02.ScalarProduct(new Vector(1, 2, 3)));
 
             Console.WriteLine("Векторное произведение векторов:");
-            Console.WriteLine(vector01.Product(vectorXYZ));
-            Console.WriteLine(vector02.Product(vectorXYZ));
+            Console.WriteLine(vector01.Product(new Vector(1, 2, 3)));
+            Console.WriteLine(vector02.Product(new Vector(1, 2, 3)));
             Console.ReadKey();
         }
 
